@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "UseMoreSpace",
+  "description": "Makes sites use more horizontal white space.\n\nSupported sites: [Github, Stack Overflow, MDN, Mint]",
+  "version": "1.0.11",
+  "author": "ngavin@umich.edu",
+  "content_scripts":
+  [
+	  {
+	    "matches": ["https://github.com/*"],
+	    "run_at": "document_idle",
+	    "js": ["gitHubSetMaxWidth.js"]
+    },
+    {
+	    "matches": ["https://stackoverflow.com/*", "https://*.stackexchange.com/*"],
+	    "run_at": "document_idle",
+	    "js": ["stackOverflowSetMaxWidth.js"]
+    },
+    {
+	    "matches": ["https://developer.mozilla.org/*"],
+	    "run_at": "document_idle",
+	    "js": ["mdnSetMaxWidth.js"]
+    },
+    {
+	    "matches": ["https://mint.intuit.com/*"],
+	    "run_at": "document_idle",
+	    "js": ["mintSetMaxWidth.js"]
+    }
+	]
+}
