@@ -1,0 +1,1 @@
+setInterval(() => document.querySelector('.TempPass-playerContainer').hidden = true, 1000)
