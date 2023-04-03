@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "UseMoreSpace",
 	"description": "Makes sites use more horizontal white space.\n\nSupported sites: [Github, Stack Overflow, Stack Exchange, Server Fault, MDN, Mint]",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"author": "ngavin@umich.edu",
 	"content_scripts":
 	[

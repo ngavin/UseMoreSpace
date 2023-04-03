@@ -1,14 +1,37 @@
 // "run_at": "document_idle" in manifest means our DOM is always ready - no need for DOMContentLoaded event handler
 setInterval(() => {
-	document.querySelectorAll('label').forEach(label => {
-		if (label.textContent === 'Keep both files') {
-			simulateClick(label)
+	document.querySelectorAll('label').forEach(keep => {
+		if (keep.textContent === 'Keep both files') {
+			simulateClick(keep)
 
-			setTimeout(() => document.querySelectorAll('span').forEach(span => {
-				if (span.textContent === 'Upload') {
-					simulateClick(span)
+			setTimeout(() => document.querySelectorAll('span').forEach(upload => {
+				if (upload.textContent === 'Upload') {
+					simulateClick(upload)
+
+					setTimeout(() => {
+						simulateClick(
+							document.querySelectorAll('c-wiz')[8]
+								.childNodes[0]
+								.childNodes[0]
+								.childNodes[0]
+								.childNodes[2]
+								.childNodes[4]
+						)
+
+						setTimeout(() => document.querySelectorAll('div').forEach(get => {
+							if (get.textContent === 'Get link') {
+								simulateClick(get)
+
+								// setTimeout(() => document.querySelectorAll('span').forEach(copy => {
+								// 	if (copy.textContent === 'Copy link') {
+								// 		simulateClick(copy)
+								// 	}
+								// }), 4000)
+							}
+						}), 1000)
+					}, 5000)
 				}
-			}), 10)
+			}), 500)
 		}
 	})
 }, 1000)
