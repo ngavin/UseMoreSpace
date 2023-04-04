@@ -10,7 +10,7 @@ setInterval(() => {
 
 					setTimeout(() => {
 						simulateClick(
-							document.querySelectorAll('c-wiz')[8]
+							document.querySelectorAll('c-wiz div c-wiz')[6]
 								.childNodes[0]
 								.childNodes[0]
 								.childNodes[0]
