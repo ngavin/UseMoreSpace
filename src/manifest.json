@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
 	"name": "UseMoreSpace",
-	"description": "Makes sites use more horizontal white space. Also some other random stuff.\n\nSupported sites: [Github, Stack Overflow, Stack Exchange, Server Fault, MDN, Mint]",
-	"version": "1.0.15",
+	"description": "Makes sites use more horizontal white space. Also some other random stuff.\n\nSupported sites: [Github, Stack Overflow, Stack Exchange, Server Fault, MDN, Mint, Google, Google Drive]",
+	"version": "1.0.16",
 	"author": "ngavin@umich.edu",
 	"content_scripts":
 	[
@@ -35,6 +35,11 @@
 			"matches": ["https://www.cnbc.com/*"],
 			"run_at": "document_idle",
 			"js": ["cnbcHideVideo.js"]
+		},
+		{
+			"matches": ["https://google.com/*"],
+			"run_at": "document_idle",
+			"js": ["googleGenerateAI.js"]
 		}
 	]
 }
