@@ -18,11 +18,11 @@ setInterval(() => {
 								.childNodes[4]
 						)
 
-						setTimeout(() => document.querySelectorAll('div').forEach(get => {
-							if (get.textContent === 'Copy link') {
-								simulateClick(get)
-							}
-						}), 5000)
+						// setTimeout(() => document.querySelectorAll('div').forEach(get => {
+						// 	if (get.textContent === 'Copy link') {
+						// 		simulateClick(get)
+						// 	}
+						// }), 5000)
 					}, 5000)
 				}
 			}), 500)
