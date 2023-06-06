@@ -19,14 +19,8 @@ setInterval(() => {
 						)
 
 						setTimeout(() => document.querySelectorAll('div').forEach(get => {
-							if (get.textContent === 'Get link') {
+							if (get.textContent === 'Copy link') {
 								simulateClick(get)
-
-								// setTimeout(() => document.querySelectorAll('span').forEach(copy => {
-								// 	if (copy.textContent === 'Copy link') {
-								// 		simulateClick(copy)
-								// 	}
-								// }), 4000)
 							}
 						}), 1000)
 					}, 5000)
