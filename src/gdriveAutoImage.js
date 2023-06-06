@@ -22,7 +22,7 @@ setInterval(() => {
 							if (get.textContent === 'Copy link') {
 								simulateClick(get)
 							}
-						}), 1000)
+						}), 5000)
 					}, 5000)
 				}
 			}), 500)
