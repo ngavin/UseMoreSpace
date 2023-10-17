@@ -1,0 +1,1 @@
+setInterval(() => document.querySelector('.apps-toast').hidden = true, 1000)
