@@ -18,7 +18,7 @@ setInterval(() => {
 								.childNodes[4]
 						)
 
-						setTimeout(() => simulateClick(document.querySelector('[aria-label="Copy link"]')), 5000)
+						setTimeout(() => simulateClick(document.querySelector('[aria-label="Copy link"]')), 1000)
 
 						// setTimeout(() => document.querySelectorAll('div').forEach(get => {
 						// 	if (get.textContent === 'Copy link') {
