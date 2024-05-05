@@ -1,4 +1,8 @@
 // "run_at": "document_idle" in manifest means our DOM is always ready - no need for DOMContentLoaded event handler
+
+const BUTTON_CLICK_DELAY = 500
+const WAIT_FOR_UPLOAD_DELAY = 4000
+
 setInterval(() => {
 	document.querySelectorAll('label').forEach(keep => {
 		if (keep.textContent === 'Keep both files') {
@@ -18,16 +22,16 @@ setInterval(() => {
 								.childNodes[4]
 						)
 
-						setTimeout(() => simulateClick(document.querySelector('[aria-label="Copy link"]')), 1000)
+						setTimeout(() => simulateClick(document.querySelector('[aria-label="Copy link"]')), BUTTON_CLICK_DELAY)
 
 						// setTimeout(() => document.querySelectorAll('div').forEach(get => {
 						// 	if (get.textContent === 'Copy link') {
 						// 		simulateClick(get)
 						// 	}
 						// }), 5000)
-					}, 3500)
+					}, WAIT_FOR_UPLOAD_DELAY)
 				}
-			}), 500)
+			}), BUTTON_CLICK_DELAY)
 		}
 	})
 }, 1000)
