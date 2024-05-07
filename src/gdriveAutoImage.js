@@ -1,7 +1,7 @@
 // "run_at": "document_idle" in manifest means our DOM is always ready - no need for DOMContentLoaded event handler
 
 const BUTTON_CLICK_DELAY = 500
-const WAIT_FOR_UPLOAD_DELAY = 4000
+const WAIT_FOR_UPLOAD_DELAY = 4500
 
 setInterval(() => {
 	document.querySelectorAll('label').forEach(keep => {
