@@ -1,6 +1,6 @@
 # UseMoreSpace
 
-Makes sites use more horizontal white space.
+Makes sites use more horizontal white space and other random fixes
 
 PRs for additional sites are welcome!
 
@@ -11,6 +11,7 @@ PRs for additional sites are welcome!
 - https://*.stackexchange.com
 - https://developer.mozilla.org/
 - https://mint.intuit.com
+- https://mail.google.com
 
 ## Installation
 
