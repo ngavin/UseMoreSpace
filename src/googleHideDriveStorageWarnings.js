@@ -1,0 +1,1 @@
+setInterval(() => document.querySelector('.docs-recommendation-banner-container').hidden = true, 1000)
