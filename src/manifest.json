@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "UseMoreSpace",
-  "description": "Makes sites use more horizontal white space. Also some other random stuff.\n\nSupported sites: [Github, Stack Overflow, Stack Exchange, Server Fault, MDN, Mint, Google, Google Drive]",
-  "version": "1.0.33",
+  "description": "Website enhancements and automations",
+  "version": "1.0.38",
   "author": "ngavin@umich.edu",
   "content_scripts": [
     {
@@ -53,6 +53,11 @@
       "matches": ["https://*.google.com/*"],
       "run_at": "document_idle",
       "js": ["googleHideDriveStorageWarnings.js"]
+    },
+    {
+      "matches": ["https://*.dropbox.com/*"],
+      "run_at": "document_idle",
+      "js": ["dropboxCloseToast.js"]
     }
   ]
 }
