@@ -2,11 +2,13 @@
 let pendingClick = null;
 
 function findCloseButton() {
-	// Match span elements with data-dig-button-content="true" and text "Close"
-	const spans = document.querySelectorAll('span[data-dig-button-content="true"]');
-	for (const span of spans) {
-		if ((span.textContent || '').trim().toLowerCase() === 'close') {
-			return span
+	const elements = document.querySelectorAll('span[data-dig-button-content="true"],button[data-testid="status-bar-drawer-close-button"]');
+	for (const element of elements) {
+		if (element.tagName === 'BUTTON' && element.getAttribute('data-testid') === 'status-bar-drawer-close-button') {
+			return element;
+		}
+		else if ((element.textContent || '').trim().toLowerCase() === 'close') {
+			return element
 		}
 	}
 	return null;

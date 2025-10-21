@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "UseMoreSpace",
   "description": "Website enhancements and automations",
-  "version": "1.0.38",
+  "version": "1.0.41",
   "author": "ngavin@umich.edu",
   "content_scripts": [
     {
