@@ -12,6 +12,7 @@ PRs for additional sites are welcome!
 - https://developer.mozilla.org/
 - https://mint.intuit.com
 - https://mail.google.com
+- https://tower-survivors-db.vercel.app/
 
 ## Installation
 

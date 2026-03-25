@@ -50,6 +50,11 @@
       "js": ["gmailHideSummarize.js"]
     },
     {
+      "matches": ["https://tower-survivors-db.vercel.app/*"],
+      "run_at": "document_idle",
+      "js": ["towerSurvivorsDbSetMaxWidth.js"]
+    },
+    {
       "matches": ["https://*.google.com/*"],
       "run_at": "document_idle",
       "js": ["googleHideDriveStorageWarnings.js"]
