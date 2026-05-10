@@ -26,6 +26,14 @@ setInterval(() => {
 	}
 }, 1000);
 
+const intervalId = setInterval(() => {
+	const banner = document.querySelector('.maestro-nav__container');
+	if (banner) {
+		banner.style.display = 'none';
+		clearInterval(intervalId); // stop checking once hidden
+	}
+}, 1000);
+
 simulateClick = (element) => {
 	simulateMouseEvent(element, 'mousedown')
 	simulateMouseEvent(element, 'mouseup')
